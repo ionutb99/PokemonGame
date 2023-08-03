@@ -1,0 +1,219 @@
+.app {
+  text-align: center;
+  background-image: url("./assets/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  padding-bottom: 60vh;
+}
+
+.location {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.location:hover {
+  background-color: #e0e0e0;
+}
+
+.encounterPokemon {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.encounterPokemon h2 {
+  font-size: 28px;
+}
+
+.encounterPokemon img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  background:transparent;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.usersPokemons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background:transparent;
+  padding: 20px;
+  /* border-radius: 5px; */
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 100px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+}
+
+.usersPokemons img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  background:transparent;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#attackButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#attackButton:hover {
+  background-color: #cc0000;
+  box-shadow: 2px 2px 50px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#encounterPok {
+  margin-left: 150px;
+}
+
+#id {
+  font-size: 24px;
+  color: #fff; 
+  text-align: center;
+  margin-top: 10px;
+  background-color: #85c1e9; 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.secondH2 {
+  width: 50vh;
+  height: 25vh;
+  font-size: 35px;
+  color: #fff; 
+  text-align: center;
+  margin-top: 100px;
+  background-color: #85c1e9; 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 150px;
+  text-decoration: underline;
+  background-image: url("./assets/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.colorId {
+  color: rgb(224, 228, 9);
+}
+
+.healthBar {
+  display: inline-block;
+  width: 15%;
+  height: 20px; /* Adjust the height according to your design */
+  background-color: #eee; /* Adjust the background color according to your design */
+  border: 1px solid #ccc; /* Adjust the border color according to your design */
+  text-align: center;
+  /* margin-left: 42.5%;
+  margin-right: 30%;  */
+
+}
+
+.healthBarFill {
+  height: 100%;
+  background-color: #4caf50; /* Adjust the fill color according to your design */
+  transition: width 0.2s ease-in-out; /* Add transition for a smoother effect */
+
+}
+
+.circle {
+  position: absolute;
+  margin-top: 280px;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  background-color: #af4929; 
+  border-radius: 50%;
+  animation: moveDown 2s forwards; 
+}
+
+.circle-two {
+  position: absolute;
+  margin-top: 280px;
+  left: 42%;
+  width: 50px;
+  height: 50px;
+  background-color: #af4929; 
+  border-radius: 50%;
+  animation: moveDown 2.5s forwards; 
+}
+
+@keyframes moveDown {
+  0% {
+    top: 0;
+     transform: scale(1); 
+  }
+  60% {
+    top: 250px; 
+    transform: scale(0.5); 
+    opacity: 0; 
+  }
+}
+
+
+.circle-three {
+  position: absolute;
+  margin-top: 270px;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  background-color: #42f386; 
+  border-radius: 50%;
+  animation: moveUp 2s forwards; 
+}
+
+.circle-four {
+  position: absolute;
+  margin-top: 280px;
+  left: 42%;
+  width: 50px;
+  height: 50px;
+  background-color: #42f386; 
+  border-radius: 50%;
+  animation: moveUp 2.5s forwards; 
+}
+
+@keyframes moveUp {
+  0% {
+    top: 170px; 
+    transform: scale(1); 
+  }
+  50% {
+    top: -20px; 
+    transform: scale(0.5); 
+    opacity: 0; 
+  }
+}
